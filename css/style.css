@@ -1,0 +1,278 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  min-height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  min-height: 500px;
+  background-color: #777;
+}
+
+.carousel .item > .container > .bloc-adhesion {
+  height: 320px;
+  margin-top: 50px;
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.carousel .item > .container > .bloc-adhesion .row {
+  height: 320px;
+  margin-bottom: 0px;
+  background-color: #fff;
+}
+
+.carousel .item > .container > .article {
+  height: 500px;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 370px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 1500px;
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner > .item > img {
+    top: 0;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+  .carousel .item > .container > .bloc-adhesion {
+    height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel .item > .container > .bloc-adhesion .row {
+    height: 320px;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    background-color: #fff;
+  }
+
+  .carousel .item > .container > .article {
+    height: 500px;
+  }
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* ancien style.css */
+
+.navbar-inverse {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: #DEDEDE;
+}
+.navbar-inverse .navbar-brand {
+  color: #555;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #555;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #555;
+  font-weight: bolder;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #555;
+  font-weight: bolder;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #555;
+  margin-bottom: -5px;
+  border-bottom: 5px solid #AB0005;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 200, 0.85);
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  border-bottom: 1px solid rgba(0, 0, 200, 0.85);
+  margin-bottom: -1px;
+}
+
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: blue;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #0000dd;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #0000dd;
+  margin-bottom: 0px;
+  border-bottom: 0;
+}
+
+.navbar-wrapper {
+  position: fixed;
+}
+
+a {
+  color: #AB0005;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #850004;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.container#page-container {
+  margin-top: 80px;
+}
+
+.img-circle {
+    min-height: 140px;
+}

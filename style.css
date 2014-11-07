@@ -1,0 +1,435 @@
+/*
+Theme Name: Mouvement pour la 6ème
+Theme URI: http://m6r.fr
+Author: M6R
+Author URI: https://github.com/m6r/theme
+Description: Thème construit avec Bootstrap pour le site du Mouvement pour la 6ème République.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: m6r
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* EDIT STYLE FOR CAT */
+.category .entry-title a, .category .entry-title a:hover, .category .entry-title a:focus {
+color:#5a5a5a;
+
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  min-height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+padding-bottom: 100px;
+left: 0%;
+right: 0%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777;
+}
+
+.carousel .item > .container > .bloc-adhesion {
+  height: 320px;
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.carousel .item > .container > .bloc-adhesion > .row {
+  height: 320px;
+  margin-bottom: 0px;
+  background-color: white;
+  text-align: center;
+}
+
+.carousel .item > .container > .article {
+  height: 500px;
+}
+
+.carousel .item > .container > .article > .social {
+  position: absolute;
+  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
+  height: 20px;
+}
+
+.carousel .item > .container > .article > .social > div {
+  position: static;
+  margin-top: 10px;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 320px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+  max-width: none;
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+  .carousel .item > .container > .bloc-adhesion {
+    height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel .item > .container > .bloc-adhesion .row {
+    height: 320px;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    background-color: transparent;
+  }
+
+  .carousel .item > .container > .article {
+    height: 450px;
+  }
+
+  .carousel .item > .container > .article > .social {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: auto;
+  }
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  div.navbar-wrapper div.container {
+    width:950px !important;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 908px) {
+  html {
+    border-left: 30px solid #FCB729;
+    border-right: 30px solid #FCB729;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* ancien style.css */
+
+.navbar-inverse {
+    background-color: rgba(255, 255, 255, 0.85);
+    /**border-color: */
+    border: 1px solid #dedede;
+}
+.navbar-inverse .navbar-brand {
+  color: #555;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #555;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #555;
+  font-weight: bolder;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #555;
+  font-weight: bolder;
+}
+.navbar-inverse .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.navbar-inverse .dropdown-menu > .active > a {
+  background-color: transparent;
+}
+.navbar-inverse .dropdown-menu > .active > a:hover,
+.navbar-inverse .dropdown-menu > .active > a:focus {
+  color: #555;
+  background-color: #F5F5F5;
+}
+.navbar-inverse .dropdown-menu > li > a {
+  color: #555;
+  font-weight: bolder;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #555;
+  margin-bottom: -5px;
+  border-bottom: 5px solid #FCB729;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  /*border-right: 5px solid #FCB729;*/
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: transparent;
+
+}
+
+.navbar-inverse .navbar-nav > .jaune > a,
+.navbar-inverse .navbar-nav > .jaune > a:hover,
+.navbar-inverse .navbar-nav > .jaune > a:focus {
+  color: #fff;
+  background-color: rgba(255, 162, 0, 0.65);
+}
+.navbar-inverse .navbar-nav > .jaune > a {
+  border-bottom: 1px solid rgba(255, 162, 0, 0.65);
+  margin-bottom: -1px;
+  border-top: 1px solid rgba(255, 162, 0, 0.65);
+  margin-top: -1px;
+}
+
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: rgba(255, 162, 0, 0.65);
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: rgba(255, 162, 0, 0.65);
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: rgba(255, 162, 0, 0.65);
+  margin-bottom: 0px;
+  border-bottom: 0;
+}
+
+.navbar-wrapper {
+  position: fixed;
+}
+
+a {
+  color: #FCB729;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #DCA719;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.container#page-container {
+  margin-top: 80px;
+}
+
+.img-circle {
+    min-height: 140px;
+}
+
+.entry-header img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+p {
+  font-size: 18px;
+}
+
+#petition {padding:10px;border:3px solid #fcb729;
+border-radius:8px;
+}
+dk-speakup-petition-wrap, #dk-speakup-petition-1, #dk-speakup-windowshade {
+position:relative;
+margin:10px auto !important;
+}
+
+.site-info {
+  text-align: center;
+}
+
+#signataires td {padding:2px 0px 2px 3px;}
+#signataires tr td:first-child {background:url("/imgs/dots.gif") repeat-X 0 15px;}
+#signataires tr td strong {border:5px solid white;background-color:white;}
+div.entry-content img {border:1px solid #c0c0c0 !important;border-radius: 4px;}
+footer.entry-meta {display:none;}
+body.archive.category img.attachment-post-thumbnail.wp-post-image {display:none;}
+body.archive.category h1.entry-title {margin-bottom:0px;}
+body.archive.category h1.entry-title > a {font-size:20px;font-weight:bold;}
+body.archive.category div.entry-content > p {font-size:14px;font-weight:normal;font-style:normal;margin-top:0px;}
+body.archive.category div.entry-content > p > em {font-style:normal;}
+
+article#post-587.post-587 > div.entry-content > div.mr_social_sharing_wrapper {display:none !important;}
+article#post-587.post-587 > div.entry-content > div.mr_social_sharing_wrapper:first-child {display:block !important;}
+
+.comments-area ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+	
+ol.wp-paginate-comments,ol.wp-paginate-comments li  {list-style-type :none !important;}
+	
+.comments-area ol li { counter-increment: section; }
+            
+.comments-area ol li:before  { content: counters(section, ".") ". "; }
+.comment-meta > cite > span {display:none;}
+.comment-meta > cite {display:block;}
+.comment-meta > time {display:block;}
+.comment-meta > img {float:left;width:32px;height:32px;margin-right:10px;margin-top:4px;}
+.comments-area ol.commentlist {list-style-position: inside;padding-left:0px;}
+.comments-area ol.commentlist li {font-weight:bold;padding-left:5px;}
+.comments-area ol.children {margin-bottom:10px;list-style-position: inside;margin-left:30px;padding-left:0px;}
+.comments-area ol.children li  {font-weight:bold;padding-left:5px;}
+.comments-area p.edit-link {display:none;}
+.comments-area ol ol ol .comment-reply-link {display:none;}
+.comments-area .comment-reply-link {float:left;}
+.comments-area .reply span {display:none;}
+.comments-area span.safe-comments-report-link {display:block;float:right;font-size:11px;padding-right:10px;}
+.comments-area span.safe-comments-report-link span {display:block;}
+.comments-area .reply {margin-bottom:10px;border-bottom:1px dotted #fcb729;text-align:right;overflow:hidden;}
+.comments-area .thread-even {background-color:#f4f4f4;}
+.comments-area .depth-2 {background-color:#fafafa;}
+.comments-area .depth-3 {background-color:#ffffff;}
+.comments-area .comment-content p {font-weight:normal;font-size:14px;margin-top:8px;}
+.comment-respond {margin-top:60px;}
+.comment-respond h3, h2.comments-title {font-size:20px !important;background-color:#fcb729;padding:5px;color:white;}
+p.form-allowed-tags {font-size:12px !important;}
+p.form-submit {text-align:center;}
+div.rw-right {margin-right:10px !important;}
+.comment-form-comment label {display:none;}
+.comment-form-comment textarea {width:100%;}
