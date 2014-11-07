@@ -79,6 +79,33 @@ function m6r_setup() {
 	);
 	add_theme_support( 'custom-header', $defaults );
 
+	add_action( 'init', 'create_post_type' );
+	function create_post_type() {
+	  register_post_type( 'm6r_banniere',
+	    array(
+	      'labels' => array(
+	        'name' => 'Bannières',
+	        'singular_name' => 'Bannière',
+	        'menu_name' => 'Bannières',
+	        'name_admin_bar' => 'Bannières',
+	        'add_new'  => 'Ajouter',
+	        'add_new_item' => 'Ajouter une nouvelle bannière',
+	        'new_item' => 'Nouvelle bannière',
+	        'edit_item' => 'Éditer la bannière',
+	        'view_item' => 'Voir la bannière',
+	        'all_items' => 'Toutes les bannières',
+	        'search_items' => 'Rechercher',
+	        'not_found' => 'Pas de bannière trouvée.',
+	        'not_found_in_trash' => 'Pas de bannière trouvée dans la corbeille.'
+	      ),
+	    'public' => true,
+	    'exclude_from_search' => true,
+	    'show_in_nav_menus' => false,
+	    'supports' => array( 'title', 'editor', 'thumbnail')
+	    )
+	  );
+	}
+
 
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );
