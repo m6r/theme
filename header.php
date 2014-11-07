@@ -4,9 +4,9 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package M6R
+ * @subpackage M6RTheme
+ * @since TwentyTwelve
  */
 ?>
 <!DOCTYPE html>

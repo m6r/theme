@@ -4,9 +4,9 @@
  *
  * See http://codex.wordpress.org/Custom_Headers
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package M6R
+ * @subpackage M6RTheme
+ * @since TwentyTwelve
  */
 
 /**
@@ -17,7 +17,7 @@
  * @uses m6r_admin_header_style() to style wp-admin form.
  * @uses m6r_admin_header_image() to add custom markup to wp-admin form.
  *
- * @since Twenty Twelve 1.0
+ * @since TwentyTwelve
  */
 function m6r_custom_header_setup() {
 	$args = array(
@@ -64,7 +64,7 @@ add_action( 'admin_print_styles-appearance_page_custom-header', 'm6r_custom_head
  *
  * get_header_textcolor() options: 515151 is default, hide text (returns 'blank'), or any hex value.
  *
- * @since Twenty Twelve 1.0
+ * @since TwentyTwelve
  */
 function m6r_header_style() {
 	$text_color = get_header_textcolor();
@@ -102,7 +102,7 @@ function m6r_header_style() {
 /**
  * Style the header image displayed on the Appearance > Header admin panel.
  *
- * @since Twenty Twelve 1.0
+ * @since TwentyTwelve
  */
 function m6r_admin_header_style() {
 ?>
@@ -144,7 +144,7 @@ function m6r_admin_header_style() {
  *
  * This callback overrides the default markup displayed there.
  *
- * @since Twenty Twelve 1.0
+ * @since TwentyTwelve
  */
 function m6r_admin_header_image() {
 	?>

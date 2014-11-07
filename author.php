@@ -6,9 +6,9 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package M6R
+ * @subpackage M6RTheme
+ * @since TwentyTwelve
  */
 
 get_header(); ?>
@@ -51,7 +51,7 @@ get_header(); ?>
 					/**
 					 * Filter the author bio avatar size.
 					 *
-					 * @since Twenty Twelve 1.0
+					 * @since TwentyTwelve
 					 *
 					 * @param int $size The height and width of the avatar in pixels.
 					 */

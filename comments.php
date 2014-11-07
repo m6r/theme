@@ -7,9 +7,9 @@
  * handled by a callback to m6r_comment() which is
  * located in the functions.php file.
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package M6R
+ * @subpackage M6RTheme
+ * @since TwentyTwelve
  */
 
 /*

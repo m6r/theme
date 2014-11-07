@@ -4,9 +4,9 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @package M6R
+ * @subpackage M6RTheme
+ * @since TwentyTwelve
  */
 
 get_header(); ?>
@@ -77,7 +77,7 @@ endif;
 								/**
  								 * Filter the image attachment size to use.
 								 *
-								 * @since Twenty Twelve 1.0
+								 * @since TwentyTwelve
 								 *
 								 * @param array $size {
 								 *     @type int The attachment height in pixels.
