@@ -61,7 +61,9 @@ function m6r_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status', 'video', 'audio' ) );
 
 	// This theme uses wp_nav_menu() in one location.
+	// On a ajouté les liens à droite.
 	register_nav_menu( 'primary', __( 'Primary Menu', 'm6r' ) );
+	register_nav_menu( 'liens_droite', __( 'Liens à droite', 'm6r' ) );
 
 
 	$defaults = array(

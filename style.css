@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 Theme Name: Mouvement pour la 6ème
 Theme URI: http://m6r.fr
@@ -202,11 +201,10 @@ a:focus {
   min-height: 500px;
   margin-bottom: 60px;
 }
-
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   left: 0%;
   right: 0%;
 }
@@ -216,35 +214,31 @@ a:focus {
   background-color: #777;
 }
 
-/**
- * C'est toute la partie responsive : ici la config pour les écran de téléphone.
- */
-.carousel .item > .container > .bloc-adhesion {
+.carousel .item > .container-fluid > .bloc-adhesion {
   height: 320px;
   margin-left:-15px;
   margin-right:-15px;
 }
-
-.carousel .item > .container > .bloc-adhesion > .row {
+.carousel .item > .container-fluid > .bloc-adhesion > .row {
   height: 320px;
   margin-bottom: 0px;
   background-color: white;
   text-align: center;
 }
 
-.carousel .item > .container > .article {
-  height: 500px;
+.carousel .item > .container-fluid > .article {
+  height: 450px;
 }
 
-.carousel .item > .container > .article > .social {
+.carousel .item > .container-fluid > .article > .social {
   position: absolute;
   z-index: 9999;
-  bottom: 20px;
+  bottom: 60px;
   right: 20px;
   height: 20px;
 }
 
-.carousel .item > .container > .article > .social > div {
+.carousel .item > .container-fluid > .article > .social > div {
   position: static;
   margin-top: 10px;
 }
@@ -260,6 +254,47 @@ a:focus {
   min-height: 500px;
 }
 
+.liens-articles {
+  background-color: rgba(252, 183, 41, 1);
+  color: #FFF;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+.liens-articles > a >.lien-article {
+  height: 133px;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  padding-top: auto;
+  line-height: 133px;
+}
+
+.liens-articles > a >.lien-article > p {
+  vertical-align:middle;
+  display:inline-block;
+  line-height:normal;
+}
+
+.liens-articles > a > .lien-article:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+
+.liens-articles > a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+
+.liens-articles > a > .lien-article {
+  color: #FFF;
+  border-top: 4px solid rgba(272, 203, 61, 0.8);
+}
+
+.liens-articles > a:first-child > .lien-article {
+  border-top: 0px;;
+}
+
+
 /**
  * Ici un peu plus large.
  */
@@ -272,27 +307,39 @@ a:focus {
     right: -9999px;
     margin: auto;
   }
-  .carousel .item > .container > .bloc-adhesion {
-    height: 500px;
+  .carousel .item > .container-fluid > .bloc-adhesion {
+    height: 450px;
     margin-left: 0;
     margin-right: 0;
   }
-  .carousel .item > .container > .bloc-adhesion .row {
+  .carousel .item > .container-fluid > .bloc-adhesion .row {
     height: 320px;
     margin-top: 130px;
     margin-bottom: 50px;
     background-color: transparent;
   }
 
-  .carousel .item > .container > .article {
+  .carousel .item > .container-fluid > .article {
     height: 450px;
   }
 
-  .carousel .item > .container > .article > .social {
+  .carousel .item > .container-fluid > .article > .social {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
     height: auto;
+  }
+
+  .liens-articles > a > .lien-article {
+    border-top: 0px;
+  }
+
+  .liens-articles > a:first-child > .lien-article {
+    border-right: 4px solid rgba(272, 203, 61, 0.8);
+  }
+
+  .liens-articles > a:last-child > .lien-article {
+    border-left: 4px solid rgba(272, 203, 61, 0.8);
   }
 }
 
@@ -326,6 +373,10 @@ a:focus {
     font-size: 21px;
     line-height: 1.4;
   }
+
+  .carousel-caption {
+    padding-left: 50px;
+  }
 }
 
 @media (min-width: 908px) {
@@ -333,7 +384,52 @@ a:focus {
     border-left: 30px solid #FCB729;
     border-right: 30px solid #FCB729;
   }
+
+  .liens-articles > a:first-child > .lien-article {
+    border-left: 4px solid rgba(272, 203, 61, 0.8);
+  }
+
+  .liens-articles > a:last-child > .lien-article {
+    border-right: 4px solid rgba(272, 203, 61, 0.8);
+  }
 }
+
+@media (min-width: 992px) {
+  .liens-articles {
+    background-color: rgba(252, 183, 41, 0.90);
+    margin-top: 73px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid rgba(272, 203, 61, 0.8);
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .liens-articles > a > .lien-article:hover {
+    background-color: rgba(0, 0, 0, 0.20);
+  }
+
+  .liens-articles > a:first-child > .lien-article {
+    border-right: 0px;
+    border-left: 0px;
+  }
+
+  .liens-articles > a:last-child > .lien-article {
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  .liens-articles > a > .lien-article {
+    color: #FFF;
+    border-top: 4px solid rgba(272, 203, 61, 0.8);
+  }
+
+  .liens-articles > a:first-child > .lien-article {
+    border-top: 0px;;
+  }
+}
+
+
 
 .container#page-container {
   margin-top: 80px;
@@ -419,4 +515,4 @@ p.form-submit {text-align:center;}
 div.rw-right {margin-right:10px !important;}
 .comment-form-comment label {display:none;}
 .comment-form-comment textarea {width:100%;}
->>>>>>> cd39ecd... réorganisation feuille de style
+>>>>>>> df18145... ajout menu vertical

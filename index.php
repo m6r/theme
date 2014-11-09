@@ -20,12 +20,12 @@ get_header(); ?>
 	$loop = new WP_Query( $args );
 	while ( $loop->have_posts() ) : $loop->the_post();
 ?>
-<div class="carousel slide">
+    <div class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
           <?php the_post_thumbnail( array(1500, 500) ); ?>
-          <div class="container">
-            <div class="col-sm-4 bloc-adhesion">
+          <div class="container-fluid">
+            <div class="col-sm-4 col-md-2 bloc-adhesion">
               <div class="row">
                   <!-- ICI EST L'IMAGE D'EN TÊTE ! -->
                   <?php if (get_header_image()) { ?>
@@ -35,7 +35,7 @@ get_header(); ?>
                   <?php } ?>
               </div>
             </div>
-            <div class="col-sm-8 article">
+            <div class="col-sm-8 col-md-6 article">
               <div class="carousel-caption">
                 <span style="font-size: 44pt;"><?php the_title(); ?></span>
                 <span style="font-size: 40pt;"><?php the_content(); ?></span>
@@ -53,12 +53,57 @@ get_header(); ?>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="row liens-articles">
+                <?php
+                  $defaults = array(
+                    'theme_location'  => 'liens_droite',
+                    'menu'            => 'liens_droite',
+                    'container'       => false,
+                    'echo'            => false,
+                    'menu_class'      => false,
+                    'fallback_cb'     => 'wp_page_menu',
+                    'link_before'     => '<div class="col-sm-4 col-md-12 lien-article"><p>',
+                    'link_after'      => '</p></div>',
+                    'items_wrap'      => '%3$s',
+                    'depth'           => 0,
+                    'walker'          => ''
+                  );
+                  $menu = wp_nav_menu( $defaults );
+
+                  $find = array('><a', '</li>', '<li');
+                  $replace = array('', '', '<a');
+                  echo str_replace( $find, $replace, $menu );
+                ?>
+                <!--<a href="">
+                  <div class="col-sm-4 col-md-12 lien-article">
+                    <p>
+                      Test Lorem ipsum un titre de ouf&nbsp;!
+                    </p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="col-sm-4 col-md-12 lien-article">
+                    <p>
+                      Un deuxième titre qui déchire.
+                    </p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="col-sm-4 col-md-12 lien-article">
+                    <p>
+                      Un plus court.
+                    </p>
+                  </div>
+                </a>-->
+              </div><!-- end .liens-articles -->
+            </div><!-- end .col -->
+          </div><!-- end .container -->
+        </div><!-- end .item -->
+      </div><!-- end .carousel-inner -->
+    </div><!-- end .carousel -->
 <?php
-	endwhile;
+	endwhile; // fin d'affichage de la dernière bannière
 ?>
 
 <div id="page-container" class="container medaillons">
