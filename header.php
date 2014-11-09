@@ -46,20 +46,6 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php
 
-$defaults = array(
-  'container'       => false,
-  'menu_class'      => 'nav navbar-nav',
-  'menu_id'         => '',
-  'echo'            => true,
-  'fallback_cb'     => 'wp_page_menu',
-  'before'          => '',
-  'after'           => '',
-  'link_before'     => '',
-  'link_after'      => '',
-  'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-  'depth'           => 0,
-  'walker'          => ''
-);
 $menu_options = array(
   'menu'              => 'primary',
   'theme_location'    => 'primary',
