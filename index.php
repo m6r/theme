@@ -14,11 +14,13 @@
 get_header(); ?>
 
 <?php
+  // Récupérer la dernière bannière
+
 	$args = array( 'post_type' => 'm6r_banniere', 'posts_per_page' => 1);
 	$loop = new WP_Query( $args );
 	while ( $loop->have_posts() ) : $loop->the_post();
 ?>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
           <?php the_post_thumbnail( array(1500, 500) ); ?>
@@ -59,7 +61,7 @@ get_header(); ?>
 	endwhile;
 ?>
 
-<div id="page-container" class="container marketing">
+<div id="page-container" class="container medaillons">
 	<div class="row">
         <?php
         $args = array(

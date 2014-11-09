@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Theme Name: Mouvement pour la 6ème
 Theme URI: http://m6r.fr
@@ -20,13 +21,34 @@ body {
   color: #5a5a5a;
 }
 
-/* EDIT STYLE FOR CAT */
+/* Basic style */
+
 .category .entry-title a, .category .entry-title a:hover, .category .entry-title a:focus {
   color:#5a5a5a;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #FCB729;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #DCA719;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/**
+ * Customization de la barre de menu
+ */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -49,189 +71,6 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  min-height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-padding-bottom: 100px;
-left: 0%;
-right: 0%;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  background-color: #777;
-}
-
-.carousel .item > .container > .bloc-adhesion {
-  height: 320px;
-  margin-left:-15px;
-  margin-right:-15px;
-}
-.carousel .item > .container > .bloc-adhesion > .row {
-  height: 320px;
-  margin-bottom: 0px;
-  background-color: white;
-  text-align: center;
-}
-
-.carousel .item > .container > .article {
-  height: 500px;
-}
-
-.carousel .item > .container > .article > .social {
-  position: absolute;
-  z-index: 9999;
-  bottom: 20px;
-  right: 20px;
-  height: 20px;
-}
-
-.carousel .item > .container > .article > .social > div {
-  position: static;
-  margin-top: 10px;
-}
-
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 320px;
-  left: -9999px;
-  right: -9999px;
-  margin: auto;
-  min-width: 100%;
-  max-width: none;
-  min-height: 500px;
-}
-
-@media (min-width: 768px) {
-  .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
-  }
-  .carousel .item > .container > .bloc-adhesion {
-    height: 500px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .carousel .item > .container > .bloc-adhesion .row {
-    height: 320px;
-    margin-top: 130px;
-    margin-bottom: 50px;
-    background-color: transparent;
-  }
-
-  .carousel .item > .container > .article {
-    height: 450px;
-  }
-
-  .carousel .item > .container > .article > .social {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    height: auto;
-  }
-}
-
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  div.navbar-wrapper div.container {
-    width:950px !important;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 908px) {
-  html {
-    border-left: 30px solid #FCB729;
-    border-right: 30px solid #FCB729;
-  }
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
-
-/* ancien style.css */
 
 .navbar-inverse {
     background-color: rgba(255, 255, 255, 0.85);
@@ -335,19 +174,165 @@ right: 0%;
   position: fixed;
 }
 
-a {
-  color: #FCB729;
-  text-decoration: none;
+/**
+ * Les médaillons
+ */
+
+/* Center align the text within the three columns below the carousel */
+.medaillons .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
 }
-a:hover,
-a:focus {
-  color: #DCA719;
-  text-decoration: underline;
+.medaillons h2 {
+  font-weight: normal;
 }
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+.medaillons .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/**
+ * Le carousel c'est le header, mais on utilise le style "carousel" de bootsrap
+ * malgré tout.
+ */
+
+/* Carousel base class */
+.carousel {
+  min-height: 500px;
+  margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  padding-bottom: 100px;
+  left: 0%;
+  right: 0%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777;
+}
+
+/**
+ * C'est toute la partie responsive : ici la config pour les écran de téléphone.
+ */
+.carousel .item > .container > .bloc-adhesion {
+  height: 320px;
+  margin-left:-15px;
+  margin-right:-15px;
+}
+
+.carousel .item > .container > .bloc-adhesion > .row {
+  height: 320px;
+  margin-bottom: 0px;
+  background-color: white;
+  text-align: center;
+}
+
+.carousel .item > .container > .article {
+  height: 500px;
+}
+
+.carousel .item > .container > .article > .social {
+  position: absolute;
+  z-index: 9999;
+  bottom: 20px;
+  right: 20px;
+  height: 20px;
+}
+
+.carousel .item > .container > .article > .social > div {
+  position: static;
+  margin-top: 10px;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 320px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+  max-width: none;
+  min-height: 500px;
+}
+
+/**
+ * Ici un peu plus large.
+ */
+
+@media (min-width: 768px) {
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+  .carousel .item > .container > .bloc-adhesion {
+    height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel .item > .container > .bloc-adhesion .row {
+    height: 320px;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    background-color: transparent;
+  }
+
+  .carousel .item > .container > .article {
+    height: 450px;
+  }
+
+  .carousel .item > .container > .article > .social {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  div.navbar-wrapper div.container {
+    width:950px !important;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 908px) {
+  html {
+    border-left: 30px solid #FCB729;
+    border-right: 30px solid #FCB729;
+  }
 }
 
 .container#page-container {
@@ -363,10 +348,19 @@ a:focus {
   height: auto !important;
 }
 
-p {
-  font-size: 18px;
+/**
+ * Le pied de page.
+ */
+
+.site-info {
+  text-align: center;
 }
 
+
+/**
+ * CSS spécial pour le module pétitions
+ * @author P
+ */
 #petition {padding:10px;border:3px solid #fcb729;
 border-radius:8px;
 }
@@ -374,11 +368,6 @@ dk-speakup-petition-wrap, #dk-speakup-petition-1, #dk-speakup-windowshade {
 position:relative;
 margin:10px auto !important;
 }
-
-.site-info {
-  text-align: center;
-}
-
 #signataires td {padding:2px 0px 2px 3px;}
 #signataires tr td:first-child {background:url("/imgs/dots.gif") repeat-X 0 15px;}
 #signataires tr td strong {border:5px solid white;background-color:white;}
@@ -393,15 +382,16 @@ body.archive.category div.entry-content > p > em {font-style:normal;}
 article#post-587.post-587 > div.entry-content > div.mr_social_sharing_wrapper {display:none !important;}
 article#post-587.post-587 > div.entry-content > div.mr_social_sharing_wrapper:first-child {display:block !important;}
 
+/**
+ * CSS pour les commentaires
+ * @author P
+ */
 .comments-area ol {
   counter-reset: section;
   list-style-type: none;
 }
-	
 ol.wp-paginate-comments,ol.wp-paginate-comments li  {list-style-type :none !important;}
-	
 .comments-area ol li { counter-increment: section; }
-            
 .comments-area ol li:before  { content: counters(section, ".") ". "; }
 .comment-meta > cite > span {display:none;}
 .comment-meta > cite {display:block;}
@@ -429,3 +419,4 @@ p.form-submit {text-align:center;}
 div.rw-right {margin-right:10px !important;}
 .comment-form-comment label {display:none;}
 .comment-form-comment textarea {width:100%;}
+>>>>>>> cd39ecd... réorganisation feuille de style
