@@ -486,33 +486,142 @@ article#post-587.post-587 > div.entry-content > div.mr_social_sharing_wrapper:fi
   counter-reset: section;
   list-style-type: none;
 }
-ol.wp-paginate-comments,ol.wp-paginate-comments li  {list-style-type :none !important;}
-.comments-area ol li { counter-increment: section; }
-.comments-area ol li:before  { content: counters(section, ".") ". "; }
-.comment-meta > cite > span {display:none;}
-.comment-meta > cite {display:block;}
-.comment-meta > time {display:block;}
-.comment-meta > img {float:left;width:32px;height:32px;margin-right:10px;margin-top:4px;}
-.comments-area ol.commentlist {list-style-position: inside;padding-left:0px;}
-.comments-area ol.commentlist li {font-weight:bold;padding-left:5px;}
-.comments-area ol.children {margin-bottom:10px;list-style-position: inside;margin-left:30px;padding-left:0px;}
-.comments-area ol.children li  {font-weight:bold;padding-left:5px;}
-.comments-area p.edit-link {display:none;}
-.comments-area ol ol ol .comment-reply-link {display:none;}
-.comments-area .comment-reply-link {float:left;}
-.comments-area .reply span {display:none;}
-.comments-area span.safe-comments-report-link {display:block;float:right;font-size:11px;padding-right:10px;}
-.comments-area span.safe-comments-report-link span {display:block;}
-.comments-area .reply {margin-bottom:10px;border-bottom:1px dotted #fcb729;text-align:right;overflow:hidden;}
-.comments-area .thread-even {background-color:#f4f4f4;}
-.comments-area .depth-2 {background-color:#fafafa;}
-.comments-area .depth-3 {background-color:#ffffff;}
-.comments-area .comment-content p {font-weight:normal;font-size:14px;margin-top:8px;}
-.comment-respond {margin-top:60px;}
-.comment-respond h3, h2.comments-title {font-size:20px !important;background-color:#fcb729;padding:5px;color:white;}
-p.form-allowed-tags {font-size:12px !important;}
-p.form-submit {text-align:center;}
-div.rw-right {margin-right:10px !important;}
-.comment-form-comment label {display:none;}
-.comment-form-comment textarea {width:100%;}
->>>>>>> df18145... ajout menu vertical
+
+ol.wp-paginate-comments,ol.wp-paginate-comments li  {
+  list-style-type :none !important;
+}
+
+.comments-area ol li {
+ counter-increment: section;
+}
+
+.comments-area ol li:before  {
+ content: counters(section, ".") ". ";
+}
+
+.comment-meta > cite > span {
+  display:none;
+}
+
+.comment-meta > cite {
+  display:block;
+}
+
+.comment-meta > time {
+  display:block;
+}
+
+.comment-meta > img {
+  float:left;
+  width:32px;
+  height:32px;
+  margin-right:10px;
+  margin-top:4px;
+}
+
+.comments-area ol.commentlist {
+  list-style-position: inside;
+  padding-left:0px;
+}
+
+.comments-area ol.commentlist li {
+  font-weight:bold;
+  padding-left:5px;
+}
+
+.comments-area ol.children {
+  margin-bottom:10px;
+  list-style-position: inside;
+  margin-left:30px;
+  padding-left:0px;
+}
+
+.comments-area ol.children li  {
+  font-weight:bold;
+  padding-left:5px;
+}
+
+.comments-area p.edit-link {
+  display:none;
+}
+
+.comments-area ol ol ol .comment-reply-link {
+  display:none;
+}
+
+.comments-area .comment-reply-link {
+  float:left;
+}
+
+.comments-area .reply span {
+  display:none;
+}
+
+.comments-area span.safe-comments-report-link {
+  display:block;
+  float:right;
+  font-size:11px;
+  padding-right:10px;
+}
+
+.comments-area span.safe-comments-report-link span {
+  display:block;
+}
+
+.comments-area .reply {
+  margin-bottom:10px;
+  border-bottom:1px dotted #fcb729;
+  text-align:right;
+  overflow:hidden;
+}
+
+.comments-area .thread-even {
+  background-color:#f4f4f4;
+}
+
+.comments-area .depth-2 {
+  background-color:#fafafa;
+}
+
+.comments-area .depth-3 {
+  background-color:#ffffff;
+}
+
+.comments-area .comment-content p {
+  font-weight:normal;
+  font-size:14px;
+  margin-top:8px;
+}
+
+.comment-respond {
+  margin-top:60px;
+}
+
+.comment-respond h3, h2.comments-title {
+  font-size:20px !important;
+  background-color:#fcb729;
+  padding:5px;
+  color:white;
+}
+
+p.form-allowed-tags {
+  font-size:12px !important;
+}
+
+p.form-submit {
+  text-align:center;
+}
+
+div.rw-right {
+  margin-right:10px !important;
+}
+
+.comment-form-comment label {
+  display:none;
+}
+
+.comment-form-comment textarea {
+  width:100%;
+}
+
+>>>>>>> a8ee427... formattage code css
