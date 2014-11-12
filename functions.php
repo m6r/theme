@@ -297,7 +297,7 @@ function m6r_comment( $comment, $args, $depth ) {
 		// Proceed with normal comments.
 		global $post;
 	?>
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>" style="counter-reset: section <?php comment_ID(); ?>;">
 		<article id="comment-<?php comment_ID(); ?>" class="comment">
 			<header class="comment-meta comment-author vcard">
 				<?php

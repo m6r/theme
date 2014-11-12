@@ -483,7 +483,6 @@ article#post-587.post-587 > div.entry-content > div.mr_social_sharing_wrapper:fi
  * @author P
  */
 .comments-area ol {
-  counter-reset: section;
   list-style-type: none;
 }
 
@@ -491,12 +490,18 @@ ol.wp-paginate-comments,ol.wp-paginate-comments li  {
   list-style-type :none !important;
 }
 
-.comments-area ol li {
- counter-increment: section;
+.comments-area ol.children {
+  counter-reset: section 0 !important;
+  list-style-type: none;
+}
+
+.comments-area ol.children li {
+  counter-reset: none !important;
+  counter-increment: section;
 }
 
 .comments-area ol li:before  {
- content: counters(section, ".") ". ";
+ content: "#" counters(section, ".");
 }
 
 .comment-meta > cite > span {
