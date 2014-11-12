@@ -311,7 +311,7 @@ function m6r_comment( $comment, $args, $depth ) {
 						esc_url( get_comment_link( $comment->comment_ID ) ),
 						get_comment_time( 'c' ),
 						/* translators: 1: date, 2: time */
-						sprintf( __( '%1$s at %2$s', 'm6r' ), get_comment_date(), get_comment_time() )
+						sprintf( __( 'Le %1$s à %2$s', 'm6r' ), get_comment_date(), get_comment_time() )
 					);
 				?>
 			</header><!-- .comment-meta -->
