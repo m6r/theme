@@ -11,6 +11,7 @@
  *
  * @package M6R
  * @subpackage M6RTheme
+ * @license AGPL
  * @since TwentyTwelve
  */
 
