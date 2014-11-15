@@ -17,12 +17,7 @@
 <!-- Version deux colonnes -->
 <hr />
 <div class="row">
-    <div class="col-md-6">
-       <a href="http://www.m6r.fr/contact/">Contact</a>
-    </div>
-    <div class="col-md-6">
-       <a href="https://www.facebook.com/M6Rep" target="_blank"><img class="alignnone size-full wp-image-269" src="http://www.m6r.fr/wp-content/uploads/2014/09/Facebook.png" alt="Facebook" width="30" height="30" /></a> <a href="https://twitter.com/m6rep" target="_blank"><img class="alignnone size-full wp-image-271" src="http://www.m6r.fr/wp-content/uploads/2014/09/Twitter.png" alt="Twitter" width="30" height="30" /></a> <a href="https://plus.google.com/108873342663468397363" rel="publisher" target="_blank"><img class="alignnone size-full wp-image-270" src="http://www.m6r.fr/wp-content/uploads/2014/09/Google+.png" alt="Google+" width="30" height="30" /></a>
-    </div>
+    <?php dynamic_sidebar( 'footer-1' ); ?>
 </div>
 
 

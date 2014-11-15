@@ -248,6 +248,16 @@ function m6r_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer', 'm6r' ),
+		'id' => 'footer-1',
+		'description' => __( 'Appears on every page', 'm6r' ),
+		'before_widget' => '<div class="col-md-6">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'm6r_widgets_init' );
 
