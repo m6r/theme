@@ -18,6 +18,7 @@ get_header(); ?>
     <div class="row">
         <div id="content" role="main" class="col-md-8">
 
+        <?php echo category_description( $category_id ); ?>
 
 		<?php if ( have_posts() ) : ?>
 
